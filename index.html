@@ -24,11 +24,12 @@
         }
 
         .content {
-            background-color: #fff;
             margin: 20px;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            /* Центрирование содержимого по горизонтали */
         }
 
         p {
@@ -44,27 +45,78 @@
             display: block;
             margin: 0 auto;
         }
+
+        .mapp {
+            margin: 0 auto;
+            /* Центрирование карты по горизонтали */
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery-image {
+            max-width: 200px;
+            height: auto;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 
-<body>
+<body style="background-image: url('https://wallpapercave.com/wp/wp12538603.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <header>
         <h1>The Shard</h1>
     </header>
     <section class="content">
         <img src="https://assets.gocity.com/files/groot_london/files/styles/crop_freeform/public/shutterstock_278672162%20%281%29.jpg"
             alt="The Shard" height="520" width="1000">
-        <p><a href="https://en.wikipedia.org/wiki/The_Shard"><span style="font-size: 20px;">The Shard</span></a><span style="font-size: 21px;"> - London's iconic skyscraper, designed by architect Renzo Piano, soars 310 meters (1,016 feet)<br>
-            into the sky. It offers a 360-degree panoramic view from the 72nd-floor observation deck, showcasing<br>
-            landmarks like Tower Bridge, St. Paul's Cathedral, and the River Thames.</span></p>
+        <p><a href="https://en.wikipedia.org/wiki/The_Shard"><span style="font-size: 20px;">The Shard</span></a><span
+                style="font-size: 21px;"> - London's iconic skyscraper, designed by architect Renzo Piano, soars 310
+                meters (1,016 feet)<br>
+                into the sky. It offers a 360-degree panoramic view from the 72nd-floor observation deck, showcasing<br>
+                landmarks like Tower Bridge, St. Paul's Cathedral, and the River Thames.</span></p>
         <img src="https://www.the-shard.com/media/t5pjlauq/aqua_shard_venue_shot-2x-1.png" alt="Aqua Shard Venue"
             height="600" width="1000">
-        <p><span style="font-size: 21px;">What sets The Shard apart is not just its striking design and views, but also its multifunctionality. <br>It
-            houses offices, luxury apartments, world-class restaurants, and a five-star hotel. Dining at Aqua Shard
-            or<br>
-            Hutong while taking in the breathtaking cityscape is a culinary experience unlike any other. Beyond its<br>
-            architecture, The Shard seamlessly blends history with modernity, making it a must-visit in the heart of
-            London.</span><br>ㅤ<br>&copy; Dmytro Chernov</p>
+        <p><span style="font-size: 21px;">What sets The Shard apart is not just its striking design and views, but also
+                its multifunctionality. <br>It
+                houses offices, luxury apartments, world-class restaurants, and a five-star hotel. Dining at Aqua Shard
+                or<br>
+                Hutong while taking in the breathtaking cityscape is a culinary experience unlike any other. Beyond
+                its<br>
+                architecture, The Shard seamlessly blends history with modernity, making it a must-visit in the heart of
+                London.</span>
+        <div class="mapp">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.482337368764!2d-0.08607084871443968!3d51.504366407656825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876035a0a9271d3%3A0xbdf26ba73efb7b!2sThe%20Shard!5e0!3m2!1suk!2sde!4v1698176666098!5m2!1suk!2sde"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="gallery">
+            <img src="https://www.kone.com/en/Images/shard-hero-2880x1340_tcm17-9023.jpg" alt="Image 1"
+                class="gallery-image" onmouseover="this.style.transform='scale(1.1)'"
+                onmouseout="this.style.transform='scale(1)'">
+            <img src="https://rics.scene7.com/is/image/rics/The-Shard-Modus-March23_evening-unsplash?$article-big-img-desktop$&qlt=85,1&op_sharpen=1"
+                alt="Image 2" class="gallery-image" onmouseover="this.style.transform='scale(1.1)'"
+                onmouseout="this.style.transform='scale(1)'">
+            <img src="https://www.harpersbazaararabia.com/cloud/2021/09/10/lQQsVmj6-Shangri-La-Hotel-The-Shard-London-Ting-Table-1-1200x675.jpg"
+                alt="Image 3" class="gallery-image" onmouseover="this.style.transform='scale(1.1)'"
+                onmouseout="this.style.transform='scale(1)'">
+            <img src="https://media.timeout.com/images/100682973/750/422/image.jpg" alt="Image 5" class="gallery-image"
+                onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <br>ㅤ<br>&copy; Dmytro Chernov
+        </p>
     </section>
 </body>
 
